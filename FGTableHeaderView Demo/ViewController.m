@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UITableView+FGTableHeaderView.h"
+#import "UIImage+GIF.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -23,8 +24,13 @@
     [self setup];
     [self createTableView];
     
-    //set table header view
-    [_tbView fg_setHeaderFrame:CGRectMake(0, 0, self.view.frame.size.width, 150) image:[UIImage imageNamed:@"IMG_2174.jpg"]];
+    //Method A:load loacal image
+    //[_tbView fg_setHeaderFrame:CGRectMake(0, 0, self.view.frame.size.width, 150) image:[UIImage imageNamed:@"IMG_2174.jpg"]];
+    
+    //Method B:load web image
+    [_tbView fg_setHeaderFrame:CGRectMake(0, 0, self.view.frame.size.width, 150)
+                      imageUrl:[NSURL URLWithString:@"http://upload-images.jianshu.io/upload_images/937405-fa2ec7eee51227f7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"]
+                   placeHolder:nil];
 }
 -(void)setup{
     
