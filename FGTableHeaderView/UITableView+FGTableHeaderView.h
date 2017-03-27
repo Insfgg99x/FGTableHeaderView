@@ -10,8 +10,8 @@
 
 @interface UITableView (FGTableHeaderView)
 
-
 -(void)fg_setHeaderFrame:(CGRect)frame image:(UIImage *)image;
 
+-(void)fg_setHeaderFrame:(CGRect)frame imageUrl:(NSURL *)imagUrl placeHolder:(UIImage *)placeHolderImage;
 
 @end
