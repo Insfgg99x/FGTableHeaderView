@@ -1,4 +1,5 @@
 Pod::Spec.new do |s|
+
 s.name         = "FGTableHeaderView"
 s.version      = "2.0"
 s.summary      = "FGTableHeaderView一个方法实现表头部视图缩放"
@@ -12,5 +13,6 @@ s.source_files = 'FGTableHeaderView/*.{h,m}'
 s.requires_arc = true
 s.dependency 'SDWebImage'
 #s.dependency 'pop'
+
 end
 
