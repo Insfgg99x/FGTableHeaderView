@@ -10,7 +10,7 @@ s.frameworks   = 'Foundation','UIKit'
 s.platform     = :ios, '6.0'
 s.source_files = 'FGTableHeaderView/*.{h,m}'
 s.requires_arc = true
-#s.dependency 'SDWebImage'
+s.dependency 'SDWebImage'
 #s.dependency 'pop'
 end
 
